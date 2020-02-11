@@ -14,7 +14,7 @@ class IpModelTest extends TestCase
         $model = new IpAdress();
 
         $di = new DIFactoryConfig();
-        $di->loadServices(ANAX_INSTALL_PATH . "/config/di");
+        $di->loadServices(ANAX_INSTALL_PATH . "/test/config/di");
         $request = $di->get("request");
         $request->setServer("HTTP_CLIENT_IP", "83.249.109.85");
 
