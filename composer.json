@@ -8,6 +8,12 @@
         "psr-4": {"Anax\\": "src/"}
     },
     "require": {
+        "php": "^7.2",
+        "anax/controller": "^2.0.0@beta",
+        "anax/di": "^2.0.0alpha",
+        "anax/view": "^2.0.0@beta",
+        "anax/configure": "^2.0.0@alpha",
+        "anax/commons": "^2.0.0@alpha"
     },
     "require-dev": {
         "phpunit/phpunit": "^7"
