@@ -4,6 +4,9 @@ Detta är en modul som kan installeras i ramverket Anax för att få tillgång t
 
 ## Installering
 
-rsync -av vendor/fridalindgren91/ramverk1-module/config/ config/
-rsync -av vendor/fridalindgren91/ramverk1-module/view/ view/
+För att installera modulen, kör följande kommando:  
+    composer require fridalindgren91/ramverk1-module 
 
+För att kopiera över config filer och vyer, kör följande kommandon:  
+    rsync -av vendor/fridalindgren91/ramverk1-module/config/ config/  
+    rsync -av vendor/fridalindgren91/ramverk1-module/view/ view/
