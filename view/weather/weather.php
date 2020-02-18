@@ -56,7 +56,9 @@ if (isset($result) && $result != null) {
         <tr>
             <td>Typ av nederbörd</td>";
     foreach ($result[0]["daily"]["data"] as $w) {
-        echo "<td>" . $w["precipType"] . "</td>";
+        if (isset($w["precipType"])) {
+            echo "<td>" . $w["precipType"] . "</td>";
+        }
     }
     echo "</tr>
         <tr>
