@@ -81,14 +81,14 @@ class IpControllerTest extends TestCase
         $controller->setDI($di);
         $controller->initialize();
 
-        $di->get("request")->setPost("ipadress", "127.0.0.1");
+        $di->get("request")->setPost("ipadress", "194.47.150.9");
         $res = $controller->checkIPActionPost();
         $this->assertIsObject($res);
         $this->assertInstanceOf("Anax\Response\Response", $res);
         $this->assertInstanceOf("Anax\Response\ResponseUtility", $res);
         
         $body = $res->getBody();
-        $this->assertContains("linux.dbwebb.se", $body);
+        $this->assertContains("dbwebb.se", $body);
     }
 
     public function testCheckIP6ActionPost()
