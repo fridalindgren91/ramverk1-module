@@ -1,33 +1,21 @@
+imports:
+    - php
+
+filter:
+    excluded_paths: [vendor/*, test/*]
+
 build:
     nodes:
         analysis:
-            project_setup:
-                override:
-                    - 'true'
             tests:
                 override:
                     - php-scrutinizer-run
-                    -
-                        command: phpcs-run
-                        use_website_config: true
-        tests: true
-    coverage:
-      tests:
-        override:
-          - command: ./my-test-run
-            coverage:
-              file: path/to/coverage-data
 
-              # These formats are supported:
-              # clover, cobertura, jacoco, python-cc, ruby-cc, go-cc, lcov
-              format: name-of-format
-filter:
-    excluded_paths:
-        - 'test/*'
-checks:
-    php: true
-coding_style:
-    php:
-        spaces:
-            around_operators:
-                concatenation: true
+        tests-and-coverage:
+            tests:
+                override:
+                    -
+                        command: "make phpunit"
+                        coverage:
+                            file: "build/coverage.clover"
+                            format: "php-clover"
