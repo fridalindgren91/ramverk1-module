@@ -88,7 +88,7 @@ class WeatherController implements ContainerInjectableInterface
     public function checkAdressActionPost() : object
     {
         $ipAdress = null;
-        $data = [];
+        // $data = [];
         $errorMessage = null;
         $longitude = null;
         $latitude = null;
@@ -195,7 +195,7 @@ class WeatherController implements ContainerInjectableInterface
             }
         }
 
-        if ($errorMessage != null) {
+        if ($errorMessage !== null) {
             $json = [
                 "error" => $errorMessage
             ];
