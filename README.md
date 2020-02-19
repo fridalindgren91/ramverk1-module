@@ -4,6 +4,10 @@
 
 [![CircleCI](https://circleci.com/gh/fridalindgren91/ramverk1-module.svg?style=svg)](https://circleci.com/gh/fridalindgren91/ramverk1-module)
 
+[![Build Status](https://scrutinizer-ci.com/g/fridalindgren91/ramverk1-module/badges/build.png?b=master)](https://scrutinizer-ci.com/g/fridalindgren91/ramverk1-module/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fridalindgren91/ramverk1-module/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fridalindgren91/ramverk1-module/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/fridalindgren91/ramverk1-module/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/fridalindgren91/ramverk1-module/?branch=master)
+
 Detta är en modul som kan installeras i ramverket Anax för att få tillgång till Ip validering samt väderprognos.
 
 ## Installering
