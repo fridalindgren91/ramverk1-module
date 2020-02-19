@@ -2,7 +2,7 @@
 
 [![Build status](https://travis-ci.org/fridalindgren91/ramverk1-module.svg?branch=master)](https://travis-ci.org/fridalindgren91/ramverk1-module)
 
-[![CircleCI](https://circleci.com/github/fridalindgren91/ramverk1-module.svg?style=svg)](https://circleci.com/github/fridalindgren91/ramverk1-module)
+[![CircleCI](https://circleci.com/gh/fridalindgren91/ramverk1-module.svg?style=svg)](https://circleci.com/gh/fridalindgren91/ramverk1-module)
 
 Detta är en modul som kan installeras i ramverket Anax för att få tillgång till Ip validering samt väderprognos.
 
