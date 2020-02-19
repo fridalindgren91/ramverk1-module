@@ -11,6 +11,16 @@ build:
                         command: phpcs-run
                         use_website_config: true
         tests: true
+    coverage:
+      tests:
+        override:
+          - command: ./my-test-run
+            coverage:
+              file: path/to/coverage-data
+
+              # These formats are supported:
+              # clover, cobertura, jacoco, python-cc, ruby-cc, go-cc, lcov
+              format: name-of-format
 filter:
     excluded_paths:
         - 'test/*'
