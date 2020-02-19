@@ -88,7 +88,7 @@ class IpControllerTest extends TestCase
         $this->assertInstanceOf("Anax\Response\ResponseUtility", $res);
         
         $body = $res->getBody();
-        $this->assertContains("dbwebb.se", $body);
+        $this->assertContains("dbwebb", $body);
     }
 
     public function testCheckIP6ActionPost()
@@ -157,7 +157,7 @@ class IpControllerTest extends TestCase
         $res = $controller->checkIPJSONActionGet();
         $this->assertIsArray($res);
         
-        $this->assertContains("dbwebb.se", $res[0]["hostJSON"]);
+        $this->assertContains("dbwebb", $res[0]["hostJSON"]);
     }
 
     public function testCheckIP6JSONActionGet()
