@@ -153,11 +153,11 @@ class IpControllerTest extends TestCase
         $controller->setDI($di);
         $controller->initialize();
 
-        $di->get("request")->setGet("ipadressJSON", "127.0.0.1");
+        $di->get("request")->setGet("ipadressJSON", "194.47.150.9");
         $res = $controller->checkIPJSONActionGet();
         $this->assertIsArray($res);
         
-        $this->assertContains("linux.dbwebb.se", $res[0]["hostJSON"]);
+        $this->assertContains("dbwebb.se", $res[0]["hostJSON"]);
     }
 
     public function testCheckIP6JSONActionGet()
